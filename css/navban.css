@@ -1,0 +1,28 @@
+
+    /*navbar*/
+    #navi{
+      background-color: #FB9B35  !important;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+      margin-top: -40px;
+    }
+    #navi a{
+      font-size: 16px !important;
+      font-family: helvetica;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /*banner*/
+    .banner{
+      background-color: #3E78FB !important;
+      margin-top: 40px;
+      padding: 30px 40px 30px 40px;
+      margin-bottom: 30px;
+    }
+    .banner h4{
+      margin-left: 70px;
+    }
+
+    

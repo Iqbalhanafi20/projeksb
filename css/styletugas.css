@@ -1,0 +1,38 @@
+.btn {
+	border-radius: 5px !important;
+	width: 100px !important;
+	background-color: #91F4EC !important;
+}
+#cont{
+	margin-left: 480px !important;
+	margin-top: 20px;
+	width: 500px !important;
+	height: auto !important;
+}
+.footer {
+	background-color:  !important;
+}
+.glyphicon-heart {
+	color: #FD2659 !important;
+}
+.col-md-12{
+	background-color: #BEC2F5 !important;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+table tr td{
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.notice{
+	position: absolute !important;
+	background-color: #54EB9B !important;
+	width: 200px !important;
+	height: 50px !important;
+	padding-top: 10px !important;
+	padding-bottom: 20px !important;
+	margin-left: 250px;
+	text-align: center;
+	z-index: 2;
+}

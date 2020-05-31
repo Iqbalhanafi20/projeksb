@@ -1,0 +1,245 @@
+.formEditAdmin{
+			padding-right: 20px !important;
+			position: relative;
+			background-color: #A4C1FC;
+		}
+#formEditAdmin{
+			background-color: #9EB2F4;
+		}
+		   #isitabel{
+		margin-top: 30px !important;
+		}
+	#isitabel table{
+		width: 100%;
+	}
+	th{
+		text-align: center;
+	}
+	.kolAksi{
+		width: 150px;
+	}
+	#ubah{
+		margin-left: 35px;
+	}
+	#hapus{
+		margin-left: 7px;
+	}
+	.dataaksi{
+		margin-top: 20px;
+		font-size: 15px;
+		width: 100px !important;
+	}
+	#seksi{
+		margin-bottom: 20px;
+	}
+	#form, #formupdate{
+		margin-top: 20px !important;
+	}
+	#forminsert input{
+		width: 400px !important;
+	}
+	#formupdate select, input{
+		width: 400px !important;
+		font-size: 12px;
+	}
+	button{
+		font-size: 13px !important;
+	}
+	#formupdate input{
+		font-size: 15px !important;
+	}
+	#formupdate textarea{
+		font-size: 15px !important;
+		width: 400px !important;
+	}
+	table button{
+		background-color: #FF9955 !important;
+	}
+	table button:hover{
+		background-color: #FCD05B !important;
+	}
+input, textarea{
+	font-size: 14px !important;
+}
+.tanggal{
+	width: 300px !important;
+}
+textarea{
+	resize:none;
+	width: 45% !important;
+}
+#level{
+	width:100px !important;
+}
+#imgInfo{
+	width: 50px !important;
+	height: 50px !important;
+}
+#imgEdit{
+	width: 100px !important;
+	height: 100px !important;
+}
+#hapus, #update{
+	width: 20px !important;
+	height: 20px !important;
+}
+.ket{
+	font-weight: bold;
+}
+#batas{
+	margin-bottom: 20px !important;
+}
+.daftaradmin{
+	margin-bottom: 30px;
+	width: 100% !important;
+}
+#formEditAdmin{
+	margin-top: 50px;
+	background-color: #D2CECE;
+	padding: 20px 0px 20px 20px;
+}
+hr{
+	color: red !important;
+}
+    #isitabel{
+		margin-top: 30px !important;
+		}
+	#isitabel table{
+		width: 100%;
+	}
+	th{
+		text-align: center;
+	}
+	.kolAksi{
+		width: 150px;
+	}
+	#ubah{
+		margin-left: 35px;
+	}
+	#hapus{
+		margin-left: 7px;
+	}
+	.dataaksi{
+		margin-top: 20px;
+		font-size: 15px;
+		width: 100px !important;
+	}
+	#seksi{
+		margin-bottom: 20px;
+	}
+	#form, #formupdate{
+		margin-top: 20px !important;
+	}
+	#forminsert input{
+		width: 400px !important;
+	}
+	#formupdate select, input{
+		width: 400px !important;
+		font-size: 12px;
+	}
+	button{
+		font-size: 13px !important;
+	}
+	#formupdate input{
+		font-size: 15px !important;
+	}
+	#formupdate textarea{
+		font-size: 15px !important;
+		width: 400px !important;
+	}
+	table button{
+		background-color: #FF9955 !important;
+	}
+	table button:hover{
+		background-color: #FCD05B !important;
+	}
+input, textarea{
+	font-size: 14px !important;
+}
+.tanggal{
+	width: 300px !important;
+}
+textarea{
+	resize:none;
+	width: 100% !important;
+}
+#level{
+	width:100px !important;
+}
+#imgInfo{
+	width: 50px !important;
+	height: 50px !important;
+}
+#imgEdit{
+	width: 100px !important;
+	height: 100px !important;
+}
+#hapus, #update{
+	width: 20px !important;
+	height: 20px !important;
+}
+.ket{
+	font-weight: bold;
+}
+#batas{
+	margin-bottom: 20px !important;
+}
+/*konten kanan*/
+.kontenkelola{
+	/*margin-right: 20px;*/
+	margin-left: -30px;
+}
+/*daftar Admin*/
+.daftaradmin{
+	margin-bottom: 30px;
+	width: 100% !important;
+	background-color: #FAF3EC;
+	padding: 20px 20px 20px 20px;
+}
+.daftaradmin input{
+	width: 100% !important;
+}
+#formEditAdmin input{
+width: 100% !important;
+}
+#formEditAdmin{
+	margin-bottom: 30px;
+	width: 100% !important;
+	background-color: #FBDBBB;
+	padding: 20px 20px 20px 20px;
+}
+#formEditAdmin{
+	padding: 20px;
+	position: relative;
+}
+/*form edit biodata*/
+.editbiodataadmin{
+	margin-bottom: 30px;
+	width: 100% !important;
+	background-color: #FBDBBB;
+	padding: 20px 20px 20px 20px;
+}
+.editbiodataadmin input{
+	width: 100% !important;
+}
+/*Form biodata admin*/
+.biodataadmin{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 100% !important;
+	background-color: #D5FCB8;
+	padding: 20px 20px 20px 20px;
+}
+.biodataadmin input{
+	width: 100% !important;
+}
+/*List Admin*/
+.ListAdmin{
+	width: 100%;
+}
+.ListAdmin table{
+	width: 100%;
+}
+hr{
+	color: red !important;
+}

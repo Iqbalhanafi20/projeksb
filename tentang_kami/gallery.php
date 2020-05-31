@@ -1,0 +1,171 @@
+<?php include "../koneksi.php"; ?>
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Kesyahbandaran Utama Tanjung Priok</title>
+		  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="../1509094699.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../assets/css/fonts.googleapis.com.css" />
+    <link rel="stylesheet" href="../assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+    <link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="../css/navban.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+  
+  </head>
+  <body>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navi">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.php"> <span class="icon-cari"><img src="../open-iconic-master/png/home-2x.png" alt=""></span>Beranda<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../profile.php"><span class="icon-cari"><img src="../open-iconic-master/png/person-2x.png" alt=""></span>Profile</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="icon-cari"><img src="../open-iconic-master/png/people-2x.png" alt=""></span>Tentang Kami
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="struktur.php">Struktur Organisasi</a>
+          <a class="dropdown-item" href="../kotakKomentar.php">Kotak Komentar</a>
+          <a class="dropdown-item" href="Lokasi.php">Lokasi Kami</a>
+          <a class="dropdown-item" href="gallery.php">Gallery</a>
+          <a class="dropdown-item" href="galleryPegawai.php">Data Pegawai</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Layanan Publik
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../publik/tataUsaha.php">Bagian Tata Usaha</a>
+          <a class="dropdown-item" href="../publik/layanan_publik.php">Bidang Status Hukum dan Sertifikasi Kapal</a>
+          <a class="dropdown-item" href="../publik/keselamatanBerlayar.php">Bidang Keselamatan Berlayar</a>
+          <a class="dropdown-item" href="../publik/bidangpatroli.php">Bidang Penjagaan dan Patroli</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Info Umum
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://www.dephub.go.id/">Kementrian Perhubungan</a>
+          <a class="dropdown-item" href="http://www.bmkg.go.id/cuaca/prakiraan-cuaca-indonesia.bmkg">BMKG Info</a>
+          <a class="dropdown-item" href="#">AIS</a>
+          <a class="dropdown-item" href="https://www.pelni.co.id/welcome">Kapal Penumpang</a>
+        </div>
+      </li>
+    </ul>
+  
+  </div>
+</nav>
+
+<!-- Banner -->
+  <?php include "../bodyweb/banner.php"; ?>
+
+<center><h1>Gallery</h1></center>
+<div class="container">
+    <div class="row">
+    
+        
+                 <?php
+
+                    $perhalaman = 6;
+                    $halaman = isset($_GET['halaman']) ? (int)$_GET['halaman'] : 1 ;
+                    $mulai = ($halaman > 1) ? ($halaman * $perhalaman) - $perhalaman : 0 ; 
+
+                    $artikel = "SELECT * FROM gallery LIMIT $mulai, $perhalaman";
+                    $artikel2 = mysql_query($artikel);
+
+                    $semuanya = "SELECT * FROM gallery";
+                    $hasil = mysql_query($semuanya);
+                    $total = mysql_num_rows($hasil);
+
+
+                    $pages = ceil($total/$perhalaman);
+                  ?>
+
+                    <?php
+
+                    while($row=mysql_fetch_array($artikel2)) { ?>
+                      
+                <div class="col-md-4 gbr">    
+                    <a href="" data-toggle="modal" data-target="#<?php echo $row[0]?>"><img src="../img/imgGallery/<?php echo $row[1]?>" alt=""></a>
+                </div>
+                  <?php
+                    }
+                  ?>
+  
+    </div>
+
+     <div class="halaman">
+           <?php for($i=1; $i<=$pages; $i++){ ?>
+          -<a href="?halaman=<?php echo $i?>" id="pagination"><?php echo $i?></a>-
+           <?php } ?>
+     </div>
+
+</div>
+
+<!-- modal detail -->
+<?php
+              $q = mysql_query("SELECT * FROM gallery");
+              while($row = mysql_fetch_array($q) ){
+              ?>
+  
+              <div class="modal fade" id="<?php echo $row[0]?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">Detail Foto</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12" id="de">
+                        <div class="isidet" style="margin: 20px;">
+                          <?php echo $row[2]?>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+
+              <?php } ?>
+
+
+   
+   
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMJ3zgPbhhzTTmEKxEvqKvX8MVp-NGWVg &callback=initMap">
+    </script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	 <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

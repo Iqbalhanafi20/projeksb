@@ -1,0 +1,30 @@
+#map {
+        height: 400px;
+        width: 100%;
+       }
+.gbr img{
+        width: 100%;
+        height: 300px;
+        opacity: .7 !important;
+        border: 5px solid #BDB7B7;
+        float: left;
+        margin-bottom: 30px;
+       }
+.gbr img:hover{
+        width: 100%;
+        height: 300px;
+        opacity: 1 !important;
+       }
+.footer{
+        margin-top: 20px;
+       }
+.halaman a{
+        padding: 5px;
+        background-color: red;
+        font-size: 15px;
+        color: white;
+       }
+.container{
+        margin-top: 30px;
+        margin-bottom: 80px;
+       }

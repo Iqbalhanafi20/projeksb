@@ -1,0 +1,39 @@
+
+    /*isi konten*/
+    /*menu kiri*/
+    .konten{
+      padding: 30px;
+    }
+    #imgHistory{
+      margin-bottom: 30px;
+    }
+    #isisejarah p{
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .stat{
+      width: 100% !important;
+      height: auto;
+      background-color: white;
+      padding: 30px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    /*menu kanan*/
+    .isiAlamat{
+      margin-left: -5px;
+    }
+
+    /*logo layanan publik*/
+    .kontenLogo{
+      width: 100%;
+      height: auto;
+      padding: 50px;
+      background-color: #F9A152 !important;
+    }
+    .rounded{
+      width: 200px;
+      height: 200px;
+      margin: 20px 0px 20px 50px;
+    }

@@ -1,0 +1,84 @@
+	#isitabel{
+		margin-top: 30px !important;
+		}
+	#form input{
+			width: 100% !important;
+		}
+	#formupdate input{
+		width: 100% !important;
+		}
+	.isi{
+		margin-left: -5px !important;
+		}
+	#isitabel table{
+		width: 100%;
+	}
+	#tambahdata, #editdata{
+		margin-bottom: 7px;
+	}
+	.kolAksi{
+		width: 150px;
+	}
+	#ubah{
+		margin-left: 35px;
+	}
+	#hapus{
+		margin-left: 7px;
+	}
+	.dataaksi{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-size: 15px;
+		width: 100px !important;
+	}
+	#seksi{
+		margin-bottom: 20px;
+	}
+	#form, #formupdate{
+		margin-top: 20px !important;
+	}
+	#form{
+		border-radius: 20px;
+		background-color: #F9BF90;
+		padding: 20px;
+	}
+	#formupdate{
+		border-radius: 20px;
+		background-color: #E2BBF8;
+		padding: 20px;
+	}
+	#forminsert input{
+		width: 400px !important;
+	}
+	#formupdate select, input, textarea{
+		width: 100% !important;
+		font-size: 12px;
+	}
+	#form input{
+		width: 100% !important;
+	}
+
+	#formupdate input{
+		font-size: 15px !important;
+	}
+	textarea{
+		resize: none;
+		font-size: 15px !important;
+	    width: 100% !important;
+	}
+	button{
+		font-size: 13px !important;
+	}
+	th{
+		text-align: center;
+	}
+	table button{
+		background-color: #FF9955 !important;
+	}
+	table button:hover{
+		background-color: #FCD05B !important;
+	}
+	.isikelolapublik{
+		margin-left: -25px !important;
+		margin-right: 20px !important;
+	}

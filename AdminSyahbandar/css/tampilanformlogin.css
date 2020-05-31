@@ -1,0 +1,43 @@
+input{
+			font-size: 15px !important;
+			}
+		#remember p{
+			margin-left: 10px !important;
+		}
+				.formlogin{
+				width: 90%;
+				height: auto;
+				background-color: #1E1D1D;
+				padding: 20px;
+				margin: auto;
+				border-top: 5px solid #F63636;
+				border-bottom: 5px solid #F63636;
+				border-right: 5px solid #5E76EE;
+				border-left: 5px solid #5E76EE;
+				box-shadow: 3px 3px 5px grey;
+				transition : 2s;
+				color: white;;
+				display: 
+			}
+			body{
+				padding-top: none;
+				background-image: url("../gambar/bg4.jpg");
+				background-repeat: no-repeat
+			}
+			.wrap{
+				height: 100%;
+				width: 100%;
+				padding-top: 200px;
+				margin-top: -20px;
+			}
+			h3{
+				text-align: center;
+				font-family: arial;
+				margin-bottom: 10px;
+			}
+			.loginbtn{
+				margin-left: 20px;
+			}
+			input{
+				font-size: 15px !important;
+			}

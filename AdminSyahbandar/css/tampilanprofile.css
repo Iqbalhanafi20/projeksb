@@ -1,0 +1,47 @@
+#isitabel{
+		margin-top: 30px !important;
+		}
+	#isitabel table{
+		width: 100%;
+	}
+	th{
+		text-align: center;
+	}
+	.dataaksi{
+		margin-top: 20px;
+		font-size: 15px;
+		width: 100px !important;
+	}
+	#seksi{
+		margin-bottom: 20px;
+	}
+	button{
+		font-size: 13px !important;
+	}
+	.aksi{
+		margin-left: 10px;
+	}
+	.formEditProfile{
+		margin-top: 30px;
+		width:100%;
+	}
+	.formEditProfile input{
+		width:100% !important;
+	}
+	.formEditProfile textarea{
+		width:100% !important;
+	}
+	fieldset{
+		width: 400px !important;
+	}
+	legend{
+		color: #F7AB19;
+	}
+	textarea{
+		resize:none;
+		font-size: 13px !important;
+	}
+	label{
+		font-size: 16px;
+	}
+	
